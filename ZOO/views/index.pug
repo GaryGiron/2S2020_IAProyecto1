@@ -1,0 +1,94 @@
+extends layout
+
+block content
+  h1= title
+  div
+    form(action="/consulta/{id}" method="GET")
+      table.table.table-striped
+        tr
+          th 
+            p Caracteristicas:
+          th 
+          th 
+          th 
+          th
+        tr
+          td
+            input(type='checkbox' name='Vertebrado') 
+            p="Vertebrado"
+          td 
+            input(type='checkbox' name='Invertebrado') 
+            p="Invertebrado"
+          td 
+            input(type='checkbox' name='Exoesqueleto') 
+            p="Exoesqueleto"
+          td
+            input(type='checkbox' name='Nacen en el agua') 
+            p="Nacen en el agua"
+          td
+            input(type='checkbox' name='cola') 
+            p="cola"
+        tr
+          td
+            input(type='checkbox' name='oviparos') 
+            p="oviparos"
+          td 
+            input(type='checkbox' name='volador') 
+            p="volador"
+          td 
+            input(type='checkbox' name='sangre caliente') 
+            p="sangre caliente"
+          td
+            input(type='checkbox' name='toman leche') 
+            p="toman leche"
+          td
+            input(type='checkbox' name='longevidad baja') 
+            p="longevidad baja"
+        tr
+          td
+            input(type='checkbox' name='longevidad media') 
+            p="longevidad media"
+          td 
+            input(type='checkbox' name='longevidad alta') 
+            p="longevidad alta"
+          td 
+            input(type='checkbox' name='extinta') 
+            p="extinta"
+          td
+            input(type='checkbox' name='vulnerable') 
+            p="vulnerable"
+          td
+            input(type='checkbox' name='peligro') 
+            p="peligro"
+        tr
+          td
+            input(type='checkbox' name='grande') 
+            p="grande"
+          td 
+            input(type='checkbox' name='pequeño') 
+            p="pequeño"
+          td 
+            input(type='checkbox' name='lento') 
+            p="lento"
+          td
+            input(type='checkbox' name='rapido') 
+            p="rapido"
+          td
+            input(type='checkbox' name='normal') 
+            p="normal"
+        tr
+          th
+            p="El Animal"
+          th
+            input(type='text' name='normal') 
+          th
+            p="tiene las caracteristicas"
+          th
+            input(type="submit" value="Consultar Caracteristicas" class="btn btn-success")
+          th
+  div
+    table.table.table-striped
+      tr
+        th
+          
+        
